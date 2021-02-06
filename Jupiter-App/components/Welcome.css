@@ -1,0 +1,192 @@
+:root {
+  --main-color: #ffffff;
+  --bullshit: #9fe4ff;
+  --black: #000000;
+  --accent-1: #19b96faf;
+  --accent-2: #19b96e;
+  --core-font: "Trebuchet MS";
+  --core-font-weight: 100;
+}
+
+.Welcome {
+  text-align: center;
+}
+
+.Welcome-logo {
+  height: 40vh;
+  pointer-events: none;
+  margin: 45px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Welcome-logo {
+    animation: Welcome-logo-glow infinite 2s alternate-reverse;
+  }
+}
+
+.Welcome-header {
+  background-color: var(--main-color);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--core-font);
+  color: var(--black);
+}
+
+.Welcome-tagline {
+  font-size: calc(16px + 2vmin);
+  font-weight: var(--core-font-weight);
+  font-family: var(--core-font);
+  color: var(--black);
+  text-decoration: none;
+}
+
+.tagline-future {
+  font-size: calc(16px + 2vmin);
+  font-weight: 600;
+  font-family: var(--core-font);
+  color: var(--black);
+  text-decoration: none;
+}
+
+.Welcome-body {
+  background-color: var(--main-color);
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-tag {
+  font-size: calc(12px + 2vmin);
+  font-weight: var(--core-font-weight);
+  font-family: var(--core-font);
+  color: var(--black);
+  text-decoration: none;
+}
+
+.LearnMore-link {
+  color: var(--accent-2);
+  font-family: var(--core-font);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.Join-link {
+  color: var(--accent-2);
+  font-family: var(--core-font);
+  font-size: 44px;
+  text-decoration: none;
+  margin-top: 25px;
+  font-weight: 300;
+}
+
+.SignIn-link {
+  color: var(--accent-1);
+  font-family: var(--core-font);
+  font-size: 24px;
+  text-decoration: none;
+}
+
+@keyframes Welcome-logo-glow {
+  from {
+    filter: drop-shadow(0px 0px 30px var(--accent-2));
+  }
+  to {
+    filter: drop-shadow(0px 0px 0px var(--accent-2));
+  }
+  from {
+    filter: drop-shadow(0px 0px 0px var(--accent-2));
+  }
+  to {
+    filter: drop-shadow(0px 0px 30px var(--accent-2));
+  }
+}
+
+.Loading {
+  text-align: center;
+}
+
+.Loading-logo {
+  height: 40vh;
+  pointer-events: none;
+  margin: 45px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Loading-logo {
+    animation: Welcome-logo-spin infinite 5s linear;
+  }
+}
+
+.Loading-header {
+  background-color: var(--main-color);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--core-font);
+  color: var(--black);
+}
+
+.Loading-tagline {
+  font-size: calc(16px + 2vmin);
+  font-weight: var(--core-font-weight);
+  font-family: var(--core-font);
+  color: var(--black);
+  text-decoration: none;
+}
+
+@keyframes Welcome-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.login-in-header {
+  background-color: var(--main-color);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--core-font);
+  color: var(--black);
+}
+
+.login-tagline {
+  font-size: calc(16px + 2vmin);
+  font-weight: var(--core-font-weight);
+  font-family: var(--core-font);
+  color: var(--black);
+  text-decoration: none;
+}
+
+.signup-tagline {
+  font-size: calc(16px + 2vmin);
+  font-weight: var(--core-font-weight);
+  font-family: var(--core-font);
+  color: var(--black);
+  text-decoration: none;
+}
+
+.Landing-logo {
+  height: 10vh;
+  pointer-events: none;
+  margin: 10px;
+}
+
+.Landing-tagline {
+  font-size: calc(16px + 2vmin);
+  font-weight: var(--core-font-weight);
+  font-family: var(--core-font);
+  color: var(--black);
+  text-decoration: none;
+}
